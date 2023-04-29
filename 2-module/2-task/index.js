@@ -1,16 +1,9 @@
 function isEmpty(obj) {
-  let schedule = {}
-  if (null in schedule) {
-  return false;}
-  else {
-  return true;}
+  let keys = Object.keys(obj);
+
+  if (keys.length === 0) {
+      return true;
+  } else {
+      return false;
+  }
 }
-
-let schedule = {};
-
-alert( isEmpty(schedule) ); // true
-
-schedule["8:30"] = "подъём";
-
-alert( isEmpty(schedule) ); // false
-```
